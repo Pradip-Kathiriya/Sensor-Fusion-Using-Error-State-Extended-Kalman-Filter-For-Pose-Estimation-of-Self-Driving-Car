@@ -2,9 +2,9 @@
 
 ## Project Description
 
-In this Project, I have implemented the Error State Extended Kalman Filter (ES-EKF) for mutli-sensor fusion (IMU+LIDAR+GNSS) for pose estimation of the self driving car. The motion model and filter step of the ES-EKF relies on the IMU data to propogate the state forward in time. The GPS and LIDAR data are used for the correction of the estimated state. The estimated trajectory are then compared with the ground truth trajectory generated using CARLA simulator.
+In this Project, I have implemented the Error State Extended Kalman Filter (ES-EKF) for multi-sensor fusion (IMU+LIDAR+GNSS) for pose estimation of the self-driving car. The motion model and filter step of the ES-EKF rely on the IMU data to propagate the state forward in time. The GPS and LIDAR data are used for the correction of the estimated state. The estimated trajectory is then compared with the ground truth trajectory generated using the CARLA simulator.
 
-I have also investigated the effect of sensor miscalibration on the pose estimation of the vehicle. For this, I have changed the trasformation matrix from LIDAR to vehicle frame and observed its effect on the vehicle pose estimation. To mitigate the sensor calibration, I have tuned the LIDAR noise covariance.
+I have also investigated the effect of sensor miscalibration on the pose estimation of the vehicle. For this, I have changed the transformation matrix from LIDAR to the vehicle frame and observed its effect on vehicle pose estimation. To mitigate the sensor calibration, I have tuned the LIDAR noise covariance.
 
 Finally, I have explored the effects of sensor dropout, that is, when all external positioning information (from GPS and LIDAR) is lost for a short period of time to illustrate how the loss of external corrections results in drift in the vehicle position estimate, and also to aid in understanding how the uncertainty in the position estimate changes when sensor measurements are unavailable.
 
